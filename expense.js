@@ -8,12 +8,6 @@ function handleFormSubmit(event){
     };
     let myobj_serial=JSON.stringify(expenseDetails)
     localStorage.setItem(expenseDetails.chooseDescreption,myobj_serial)
-    // const string=myObj.ExpenseAmount + " " + myObj.chooseDescreption+" "+myObj.chooseCategory;
-    // const newLi=document.createElement("li");
-    // newLi.innerHTML=string + '<button class="delete-btn">Delete</button><button class="edit-btn">Edit</button>'
-    // const newLiText=document.createTextNode(string);
-    // newLi.appendChild(newLiText)
-    // const edit=document.createElement("button")
     printDetails(expenseDetails);
     document.getElementById("form").reset()
 
